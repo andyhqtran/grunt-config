@@ -1,0 +1,18 @@
+jade-build:
+  - 'jade'
+
+sass-build:
+  - 'sass'
+  - 'csscomb'
+  - 'postcss'
+  - 'cssmin'
+
+coffee-build:
+  - 'coffee'
+  - 'coffeelint'
+
+default:
+  - 'jade-build'
+  - 'sass-build'
+  - 'connect'
+  - 'watch'
