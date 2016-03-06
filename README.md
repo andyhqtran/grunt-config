@@ -4,7 +4,7 @@
 In the base of your project folder, run the following command in your terminal.
 
 ```
-> git submodule -f --name grunt-config -- https://github.com/andyhqtran/grunt-config grunt
+> git submodule add -f --name grunt-config -- https://github.com/andyhqtran/grunt-config grunt
 ```
 
 ## Folder Tree
