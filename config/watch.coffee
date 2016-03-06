@@ -53,11 +53,11 @@ module.exports = (grunt, options) ->
       'wakeup:success'
     ]
 
-  img:
-    files: ['<%= srcPathh %>/img/**/*']
+  css:
+    files: ['<%= srcPathh %>/css/**/*']
     tasks: [
-      'copy:img'
-      'notify:img'
+      'copy:css'
+      'notify:css'
       'wakeup:complete'
     ]
 
@@ -66,5 +66,13 @@ module.exports = (grunt, options) ->
     tasks: [
       'copy:font'
       'notify:font'
+      'wakeup:complete'
+    ]
+
+  img:
+    files: ['<%= srcPathh %>/img/**/*']
+    tasks: [
+      'copy:img'
+      'notify:img'
       'wakeup:complete'
     ]

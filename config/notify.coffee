@@ -26,6 +26,10 @@ module.exports =
     options:
       message: 'CoffeeScript files have been compiled.'
 
+  css:
+    options:
+      message: 'CSS has been copied to you build folder.'
+
   img:
     options:
       message: 'Images has been copied to you build folder.'

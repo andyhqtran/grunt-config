@@ -14,3 +14,19 @@ module.exports =
     dest: '<%= assetsPath %>/font'
     flatten: true
     filter: 'isFile'
+
+  css:
+    expand: true
+    cwd: '<%= srcPath %>/css'
+    src: ['*']
+    dest: '<%= assetsPath %>/css'
+    flatten: true
+    filter: 'isFile'
+
+  js:
+    expand: true
+    cwd: '<%= srcPath %>/js'
+    src: ['*']
+    dest: '<%= assetsPath %>/js'
+    flatten: true
+    filter: 'isFile'
