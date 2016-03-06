@@ -22,13 +22,22 @@ module.exports = (grunt, options) ->
     tasks: ['coffeelint']
 
   jade:
-    files: ['<%= srcPath %>/**/*.jade']
-    tasks: ['jade']
+    files: [
+      '<%= srcPath %>/**/*.jade'
+      '<%= srcPath %>/**/*.json'
+    ]
+    tasks: [
+      'jade'
+      'notify:jade'
+      'wakeup:success'
+    ]
 
   sass:
     files: ['<%= srcPath %>/**/*.{scss,sass}']
     tasks: [
       'sass'
+      'notify:sass'
+      'wakeup:success'
     ]
 
   coffee:
@@ -40,6 +49,8 @@ module.exports = (grunt, options) ->
     tasks: [
       'coffee'
       'coffeelint'
+      'notify:coffee'
+      'wakeup:success'
     ]
 
   img:

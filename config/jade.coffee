@@ -1,10 +1,9 @@
-module.exports = (options) ->
-  options:
-    pretty: true
-    data: (dest, src) ->
-      require('../../src/jade/config.json')
-
+module.exports =
   dev:
+    options:
+      pretty: true
+      data: (dest, src) ->
+        require('../../src/jade/config.json')
     expand: true
     cwd: '<%= srcPath %>/jade/views'
     src: ['**/*.jade']
