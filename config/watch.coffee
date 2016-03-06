@@ -54,7 +54,7 @@ module.exports = (grunt, options) ->
     ]
 
   css:
-    files: ['<%= srcPathh %>/css/**/*']
+    files: ['<%= srcPahh %>/css/**/*']
     tasks: [
       'copy:css'
       'notify:css'
@@ -62,7 +62,7 @@ module.exports = (grunt, options) ->
     ]
 
   font:
-    files: ['<%= srcPathh %>/font/**/*']
+    files: ['<%= srcPath %>/font/**/*']
     tasks: [
       'copy:font'
       'notify:font'
@@ -70,7 +70,7 @@ module.exports = (grunt, options) ->
     ]
 
   img:
-    files: ['<%= srcPathh %>/img/**/*']
+    files: ['<%= srcPath %>/img/**/*']
     tasks: [
       'copy:img'
       'notify:img'
