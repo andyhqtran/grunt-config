@@ -11,9 +11,15 @@ coffee-build:
   - 'coffee'
   - 'coffeelint'
 
+copy-build:
+  - copy:css
+  - copy:font
+  - copy:img
+
 default:
   - 'jade-build'
   - 'sass-build'
   - 'coffee-build'
+  - 'copy-build'
   - 'connect'
   - 'watch'
