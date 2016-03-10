@@ -53,6 +53,16 @@ module.exports = (grunt, options) ->
       'wakeup:success'
     ]
 
+  js:
+    files: [
+      '<%= srcPath %>/**/*.js'
+    ]
+    tasks: [
+      'copy:js'
+      'notify:js'
+      'wakeup:success'
+    ]
+
   css:
     files: ['<%= srcPath %>/css/**/*']
     tasks: [
