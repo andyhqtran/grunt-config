@@ -5,7 +5,6 @@ module.exports =
     src: ['**/*']
     dest: '<%= assetsPath %>/img'
     flatten: true
-    filter: 'isFile'
 
   font:
     expand: true
@@ -13,7 +12,6 @@ module.exports =
     src: ['**/*']
     dest: '<%= assetsPath %>/font'
     flatten: true
-    filter: 'isFile'
 
   css:
     expand: true
@@ -21,7 +19,6 @@ module.exports =
     src: ['**/*']
     dest: '<%= assetsPath %>/css'
     flatten: true
-    filter: 'isFile'
 
   js:
     expand: true
@@ -29,4 +26,3 @@ module.exports =
     src: ['**/*']
     dest: '<%= assetsPath %>/js'
     flatten: true
-    filter: 'isFile'
